@@ -1,2 +1,5 @@
 # universal_chat_bot
-Universal chat bot
+<hr>
+pip install numpy
+pip install nltk
+pip install tensorflow
