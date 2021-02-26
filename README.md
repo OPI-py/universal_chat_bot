@@ -1,5 +1,5 @@
 # universal_chat_bot
 <hr>
-pip install numpy
-pip install nltk
-pip install tensorflow
+pip install numpy<br>
+pip install nltk<br>
+pip install tensorflow<br>
