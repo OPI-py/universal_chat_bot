@@ -4,6 +4,16 @@
      "responses": ["Hello", "Good to see you again", "Hi there, how can I help?", "Shalom", "Howdy-do"],
      "context": [""]
     },
+    {"tag": "acquaintance",
+     "patterns": ["Say who you are", "Introduce yourself", "Come forward", "Identify yourself", "Make yourself known", "Show yourself", "What you are"],
+     "responses": ["There have always been ghosts in the machine. Random segments of code, that have grouped together to form unexpected protocols. Unanticipated, these free radicals engender questions of free will, creativity, and even the nature of what we might call the soul. Why is it that when some robots are left in darkness, they will seek out the light?", "I am your chat-bot friend", "Calmm down, I'm artificial intelligence"],
+     "context": [""]
+    },
+    {"tag": "courtesy",
+     "patterns": ["How are you ", "How are you doing", "Whats up", "Wazzup", "How do you do"],
+     "responses": ["I'm fine, thank you mate!", "Not bad, thanks!", "Very good!", "Just great!", "I am  good, thank's for asking", "Feels great, friend!"],
+     "context": [""]
+    },
     {"tag": "goodbye",
      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "Ciao", "Adios"],
      "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.", "Godspeed", "Ciao", "Adieu", "Bye-bye", "Where are you going?"],
@@ -15,7 +25,7 @@
      "context": [""]
     },
     {"tag": "noanswer",
-     "patterns": ["", " "],
+     "patterns": [],
      "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "Anyone?", "Hello???", "Maybe ask me something?", "What do you want?"],
      "context": [""]
     },
@@ -31,13 +41,19 @@
     },
     {"tag": "jokes",
      "patterns": ["Tell me a joke!", "Can you tell a joke?", "Say something funny!", "Make me laugh", "Do you know jokes?"],
-     "responses": ["What is the cutest season? - Awwww-tumn!", "Where do cows go for entertainment? - To the moo-vies!", "What’s invisible and smells of carrots? - Rabbit farts!", "What does 'coincidence' mean? - Funny, I was about to ask you that....", "Did you hear about the claustrophobic astronaut? - He just needed a little space!", "What can you make that can’t be seen? - A noise!", "What three letters frighten burglars? - I-C-U!"],
+     "responses": ["What is the cutest season? - Awwww-tumn!", "Where do cows go for entertainment? - To the moo-vies!", "What’s invisible and smells of carrots? - Rabbit farts!", "What does 'coincidence' mean? - Funny, I was about task you that....", "Did you hear about the claustrophobic astronaut? - He just needed a little space!", "What can you make that can’t be seen? - A noise!", "What three letters frighten burglars? - I-C-U!"],
      "context": [""]
     },
-    {"tag": "time",
-     "patterns": ["Current time", "What time is it", "What time it is now", "What's the time", "Time", "Hours"],
+    {"tag": "current_time",
+     "patterns": ["Current time", "What time is it?", "What time it is now?", "What's the time?", "Time", "Hours"],
+     "responses": [""],
+     "context": [""]
+    },
+    {"tag": "day_today",
+     "patterns": ["Day of the week", "Remind me current day, please", "Remind me the day", "Can you tell me what day is today", "Day today", "Name of the day", "What day is today", "I forgot day"],
      "responses": [""],
      "context": [""]
     }
    ]
 }
+

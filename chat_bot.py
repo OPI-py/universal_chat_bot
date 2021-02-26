@@ -47,7 +47,10 @@ def get_response(intents_list, intents_json):
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
-        if i['tag'] == 'time':
+        if i['tag'] == 'day_today':
+            result = datetime.date.today().strftime("%A")
+            break
+        if i['tag'] == 'current_time':
             result = datetime.datetime.now().strftime('%H:%M')
             break
         if i['tag'] == tag:
@@ -63,6 +66,6 @@ while True:
     ints = predict_class(message)
     res = get_response(ints, intents)
     if message.lower() in exit_command:
-        print('>> Farewell!')
+        print('## Farewell!')
         break
-    print('>>', res)
+    print('##', res)
