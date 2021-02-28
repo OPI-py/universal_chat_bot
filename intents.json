@@ -44,14 +44,19 @@
      "responses": ["What is the cutest season? - Awwww-tumn!", "Where do cows go for entertainment? - To the moo-vies!", "What’s invisible and smells of carrots? - Rabbit farts!", "What does 'coincidence' mean? - Funny, I was about task you that....", "Did you hear about the claustrophobic astronaut? - He just needed a little space!", "What can you make that can’t be seen? - A noise!", "What three letters frighten burglars? - I-C-U!"],
      "context": [""]
     },
-    {"tag": "current_time",
-     "patterns": ["Current time", "What time is it?", "What time it is now?", "What's the time?", "Time", "Hours"],
-     "responses": [""],
+    {"tag": "country_live",
+     "patterns": ["Tell me the country", "What country is this?", "Where do I live?", "In what country do I live?"],
+     "responses": ["It's Ukraine, my friend", "You live in Ukraine", "Don't you now?? It's Ukraine!"],
      "context": [""]
     },
     {"tag": "day_today",
      "patterns": ["Day of the week", "Remind me current day, please", "Remind me the day", "Can you tell me what day is today", "Day today", "Name of the day", "What day is today", "I forgot day"],
-     "responses": [""],
+     "responses": ["print('## ' + datetime.date.today().strftime('%A'))"],
+     "context": [""]
+    },
+    {"tag": "current_time",
+     "patterns": ["Current time", "What time is it?", "What time it is now?", "What's the time?", "Time", "Hours"],
+     "responses": ["print('## ' + datetime.datetime.now().strftime('%H:%M'))"],
      "context": [""]
     }
    ]
