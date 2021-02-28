@@ -68,16 +68,16 @@ def show_response():
     if res.startswith('print'):
         return exec(res)
     else:
-        print('##', res)
+        print('Bot:', res)
 
 print('Bot is running! :)')
 
 exit_command = ['exit', 'quit', 'leave']
 while True:
-    message = input('>> ')
+    message = input('You: ')
     ints = predict_class(message)
     res = get_response(ints, intents)
     if message.lower() in exit_command:
-        print('## Farewell!')
+        print('Bot: Farewell!')
         break
     show_response()
